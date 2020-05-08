@@ -10,6 +10,14 @@ data "template_file" "script" {
   }
 }
 
+# Modules
+module "vpc" {
+  source = "./VPC"
+}
+module "routetable" {
+  source = "./RouteTables"
+}
+
 
 variable "project" {
   default = "fiap-lab"
