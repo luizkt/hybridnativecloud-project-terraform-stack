@@ -1,7 +1,7 @@
 data "aws_availability_zones" "available" {}
 
 variable "project" {
-  default = "fiap-lab"
+  default = "hackathon-CD-app-stack"
 }
 variable "vpc_cidr" {
   default = "9.0.0.0/16"

@@ -10,17 +10,8 @@ data "template_file" "script" {
   }
 }
 
-# Modules
-module "vpc" {
-  source = "./VPC"
-}
-module "routetable" {
-  source = "./RouteTables"
-}
-
-
 variable "project" {
-  default = "hackathon-CD-app-stack"
+  default = "fiap-lab"
 }
 
 data "aws_vpc" "vpc" {

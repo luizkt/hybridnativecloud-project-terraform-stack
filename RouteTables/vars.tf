@@ -1,5 +1,5 @@
 variable "project" {
-  default = "hackathon-CD-app-stack"
+  default = "fiap-lab"
 }
 
 data "aws_vpc" "vpc" {
